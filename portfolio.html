@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eNno-About</title>
+    <title>eNno-portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
@@ -22,8 +22,7 @@
     </style>
 </head>
 <body>
-    <!-- Header --------------------------------------------------------------------------------------------------------->
-
+    
     <header class="sticky top-0 z-50 bg-white shadow-sm">
         <div
           class="container mx-auto flex items-center justify-between px-12 py-4"
@@ -254,25 +253,22 @@
         </nav>
       </header>
   
-    
-
-
- <!-- About Section ---------------------------------------------------------------------------------------------------------------------------------------->
-
- <section id="about" class="py-12">
+  
+<!-- Portfolio Section -------------------------------------------------------------------------------------------------------------------------------------------->
+<section id="portfolio" class="portfolio py-16 px-12 bg-gray-50">
     <div class="container mx-auto px-12 text-center mb-12" data-aos="fade-up">
       <section
         id="about"
-        class="relative flex items-center justify-center bg-white"
+        class="relative flex items-center justify-center bg-gray-50"
       >
         <span
-          class="absolute text-gray-50 text-5xl font-bold uppercase tracking-wide select-none"
+          class="absolute text-gray-100 text-5xl font-bold uppercase tracking-wide select-none "
         >
-          ABOUT US
+          portfolio
         </span>
 
-        <h2 class="relative text-gray-600 text-3xl font-bold z-10 mt-8 transform transition-transform cursor-pointer hover:-translate-y-2">
-          ABOUT
+        <h2 class="relative text-gray-600 text-3xl font-bold z-10 mt-8  transform transition-transform cursor-pointer hover:-translate-y-2">
+        PORTFOLIO
         </h2>
       </section>
 
@@ -282,128 +278,78 @@
       </p>
     </div>
 
-    <div class="container mx-auto px-12">
-      <div class="grid gap-8 md:grid-cols-2 items-center">
-        <div class="relative" data-aos="fade-up" data-aos-delay="100">
-          <img
-            src="Images/about.png"
-            alt="About Us"
-            class="w-full rounded-lg"
-          />
-          <a
-            href="#"
-            class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-green-600 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-md transition  hover:scale-110"
-          >
-            <i class="bi bi-play-fill text-2xl"></i>
-          </a>
-        </div>
-
-        <div class="space-y-6" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="text-2xl font-bold text-gray-600">
-            Voluptatem dignissimos provident quasi corporis voluptates sit
-            assumenda.
-          </h3>
-          <p class="text-gray-600 italic">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
-          </p>
-          <ul class="space-y-4">
-            <li class="flex items-start">
-              <i class="bi bi-check2-all text-green-600 text-xl mr-3"></i>
-              <span class="text-gray-600"
-                >Ullamco laboris nisi ut aliquip ex ea commodo
-                consequat.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <i class="bi bi-check2-all text-green-600 text-xl mr-3"></i>
-              <span class="text-gray-600"
-                >Duis aute irure dolor in reprehenderit in voluptate
-                velit.</span
-              >
-            </li>
-            <li class="flex items-start">
-              <i class="bi bi-check2-all text-green-600 text-xl mr-3"></i>
-              <span class="text-gray-600">
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate trideta
-                storacalaperda mastiro dolore eu fugiat nulla pariatur.
-              </span>
-            </li>
-          </ul>
-          <p class="text-gray-600">
-            Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-            irure dolor in reprehenderit in voluptate velit esse cillum dolore
-            eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident.
-          </p>
-        </div>
-      </div>
+    <!-- Filters -->
+    <div class="container mx-auto">
+      <ul class="flex justify-center space-x-4 mb-10">
+        <li class="text-sm font-medium text-gray-600 hover:text-green-600 cursor-pointer filter-active">All</li>
+        <li class="text-sm font-medium text-gray-600 hover:text-green-600 cursor-pointer">App</li>
+        <li class="text-sm font-medium text-gray-600 hover:text-green-600 cursor-pointer">Product</li>
+        <li class="text-sm font-medium text-gray-600 hover:text-green-600 cursor-pointer">Branding</li>
+        <li class="text-sm font-medium text-gray-600 hover:text-green-600 cursor-pointer">Books</li>
+      </ul>
     </div>
-  </section>
 
-  <!-- States Section ----------------------------------------------------------------------------------------------------------------------------------------->
-
-  <section id="stats" class="py-16 bg-white">
-    <div
-      class="container mx-auto text-4xl"
-      data-aos="fade-up"
-      data-aos-delay="100"
-    >
-      <div
-        class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
-      >
-        <div class="stats-item rounded-lg p-6">
-          <span
-            class="block text-4xl font-extrabold text-green-600 purecounter"
-            >232
-          </span>
-          <p class="text-sm font-semibold text-gray-500 mt-2">Clients</p>
-        </div>
-
-        <div class="stats-item rounded-lg p-6">
-          <span
-            class="block text-4xl font-extrabold text-green-600 purecounter"
-            >521
-          </span>
-          <p class="text-sm font-semibold text-gray-500 mt-2">Projects</p>
-        </div>
-
-        <div class="stats-item rounded-lg p-6">
-          <span
-            class="block text-4xl font-extrabold text-green-600 purecounter"
-            >1453
-          </span>
-          <p class="text-sm font-semibold text-gray-500 mt-2">
-            Hours Of Support
-          </p>
-        </div>
-
-        <div class="stats-item rounded-lg p-6">
-          <span
-            class="block text-4xl font-extrabold text-green-600 purecounter"
-            >32
-          </span>
-          <p class="text-sm font-semibold text-gray-500 mt-2">Workers</p>
-        </div>
+    <!-- Portfolio Items -->
+    <div class="container mx-auto grid px-12 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Portfolio Item -->
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/app-1.jpg" alt="App 1" class="w-full shadow-lg">
+        <!-- <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-70 transition-all duration-300 flex items-center justify-center rounded-lg">
+          <div class="text-center text-white  opacity-0 group-hover:opacity-100">
+            <h4 class="text-xl font-bold">App 1</h4>
+            <p class="text-sm mt-2">Lorem ipsum, dolor sit amet consectetur</p>
+            <div class="flex justify-center mt-4 space-x-4">
+              <a href="#" class="text-2xl" title="Preview"><i class="bi bi-zoom-in"></i></a>
+              <a href="#" class="text-2xl" title="More Details"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div> -->
       </div>
-    </div>
-  </section>
-
-
-
-
-  <!-- PortFolio ----------------------------------------------------------------------------------------------------------------------------------------------------------->
-
-
-
+      <!-- Additional Items (Similar structure to the first) -->
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/product-1.jpg" alt="Product 1" class="w-full ">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/branding-1.jpg" alt="Branding 1" class="w-full">
+        
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/books-1.jpg" alt="Book 1" class="w-full">
   
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/app-2.jpg" alt="app 2" class="w-full">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/product-2.jpg" alt="product-2" class="w-full ">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/branding-2.jpg" alt="branding-2" class="w-full ">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/books-2.jpg" alt="books-2" class="w-full ">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/app-3.jpg" alt="app-3" class="w-full ">
+        
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/product-3.jpg" alt="product-3" class="w-full ">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/branding-3.jpg" alt="Branding 3" class="w-full ">
+      </div>
+      <div class="relative group transform transition-transform cursor-pointer hover:-translate-y-2">
+        <img src="Images/books-3.jpg" alt="books-3" class="w-full">
+      </div>
+    </div>
+  </section>
 
 
 
-          <!-- Footer  ----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
-    <footer id="footer" class="bg-background-color text-default-color relative">
+
+      <footer id="footer" class="bg-background-color text-default-color relative">
         <div
           class="bg-opacity-97 bg-gray-50 bg-gradient-to-t to-transparent py-12 px-12"
         >
@@ -423,7 +369,7 @@
                   <input
                     type="email"
                     name="email"
-                    class="w-full bg-gray-50 text-gray-600 border-0 p-2 focus:outline-none"
+                    class="w-full bg-gray-50 text-green-600 border-0 p-2 focus:outline-none"
                   />
                   <input
                     type="submit"
@@ -471,7 +417,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="services.html" class="flex items-center opacity-80 hover:text-green-600">
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-600">
                     <i class="bi bi-chevron-right mr-2 text-green-600"></i> Services
                   </a>
                 </li>
@@ -581,33 +527,34 @@
           ↑
         </button>
       </footer>
-
+  
       <script>
-         const mobileToggle = document.getElementById("mobile-nav-toggle");
-      const mobileNav = document.getElementById("mobile-navmenu");
-
-      mobileToggle.addEventListener("click", () => {
-        mobileNav.classList.toggle("hidden");
-      });
-
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById("mobile-nav-toggle");
+        const mobileNav = document.getElementById("mobile-navmenu");
+  
+        mobileToggle.addEventListener("click", () => {
+          mobileNav.classList.toggle("hidden");
         });
-      }
-
-      window.onscroll = function () {
-        const button = document.querySelector(".scroll-to-top");
-        if (
-          document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50
-        ) {
-          button.style.display = "block";
-        } else {
-          button.style.display = "none";
+  
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
         }
-      };
+  
+        window.onscroll = function () {
+          const button = document.querySelector(".scroll-to-top");
+          if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50
+          ) {
+            button.style.display = "block";
+          } else {
+            button.style.display = "none";
+          }
+        };
       </script>
 </body>
 </html>
