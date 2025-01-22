@@ -30,7 +30,7 @@
 
     <header class="sticky top-0 z-50 bg-white shadow-sm">
       <div
-        class="container mx-auto flex items-center justify-between px-6 py-4"
+        class="container mx-auto flex items-center justify-between px-12 py-4"
       >
         <a href="index.html" class="flex items-center">
           <h1 class="text-3xl font-bold text-gray-600">eNno</h1>
@@ -40,14 +40,14 @@
           <ul class="flex items-center space-x-6">
             <li>
               <a
-                href="#hero"
+                href="index.html"
                 class="text-gray-600 hover:text-green-600 transition"
                 >Home</a
               >
             </li>
             <li>
               <a
-                href="#about"
+                href="about.html"
                 class="text-gray-600 hover:text-green-600 transition"
                 >About</a
               >
@@ -104,11 +104,26 @@
                     >Dropdown 1</a
                   >
                 </li>
-                <li class="relative dropdown">
+                <li class="relative dropdown ">
                   <a
                     href="#"
-                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                    >Deep Dropdown</a
+                    class=" flex w-auto block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Deep Dropdown
+                    
+                    <svg
+                  class="ml-1 w-4 h-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg></a
                   >
                   <ul
                     class="absolute left-full top-0 bg-white border rounded shadow-lg w-40"
@@ -124,7 +139,9 @@
                       <a
                         href="#"
                         class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
-                        >Deep Dropdown 2</a
+                        >Deep Dropdown 2
+                        
+                        </a
                       >
                     </li>
                   </ul>
@@ -134,6 +151,27 @@
                     href="#"
                     class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
                     >Dropdown 2</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Dropdown 3</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Dropdown 4</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Dropdown 5</a
                   >
                 </li>
               </ul>
@@ -168,14 +206,14 @@
         <ul>
           <li>
             <a
-              href="#hero"
+              href="index.html"
               class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
               >Home</a
             >
           </li>
           <li>
             <a
-              href="#about"
+              href="about.html"
               class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
               >About</a
             >
@@ -220,31 +258,40 @@
       </nav>
     </header>
 
+
+
+
     <!-- Hero Section ----------------------------------------------------------------------------------------------------------------------------------------------->
 
+
+
+
     <section id="hero" class="w-full py-16 mt-20">
-      <div class="container mx-auto px-6">
-        <div class="flex flex-col lg:flex-row items-center gap-8">
-          <div class="lg:w-1/2">
-            <h1 class="text-5xl font-bold text-gray-600 leading-tight">
+      <div class="container mx-auto px-12">
+        <div class="flex flex-col-reverse lg:flex-row items-center gap-8">
+          <!-- Text Content -->
+          <div class="lg:w-1/2 text-center lg:text-left">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-600 leading-tight">
               Elegant and Creative Solutions
             </h1>
-            <p class="mt-4 text-lg text-gray-600">
+            <p class="mt-4 text-base md:text-lg text-gray-600">
               We are a team of talented designers making websites with Bootstrap
             </p>
-            <div class="mt-6 flex space-x-4">
+            <div class="mt-6 flex justify-center lg:justify-start space-x-4">
               <a
                 href="#about"
                 class="inline-block bg-green-600 text-white px-6 py-3 rounded-full hover:bg-green-700 transition"
               >
                 Get Started
               </a>
-              <a href="#" class="flex items-center ">
+              <a href="#" class="flex items-center">
                 <i class="bi bi-play-circle text-3xl mr-2 text-green-600"></i>
                 <span class="text-lg font-semibold">Watch Video</span>
               </a>
             </div>
           </div>
+    
+          <!-- Image -->
           <div class="lg:w-1/2">
             <img
               src="Images/hero-img.png"
@@ -255,11 +302,12 @@
         </div>
       </div>
     </section>
+    
 
     <!-- Feacher sections --------------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="featured-services" class="py-12">
-      <div class="container mx-auto px-6">
+      <div class="container mx-auto px-12">
         <div class="grid gap-8 md:grid-cols-3">
           <div
             class="service-item bg-gray-50 0 p-6 transform transition-transform hover:-translate-y-2"
@@ -330,7 +378,7 @@
     <!-- About Section ---------------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="about" class="py-12">
-      <div class="container mx-auto px-6 text-center mb-12" data-aos="fade-up">
+      <div class="container mx-auto px-12 text-center mb-12" data-aos="fade-up">
         <section
           id="about"
           class="relative flex items-center justify-center bg-white"
@@ -352,7 +400,7 @@
         </p>
       </div>
 
-      <div class="container mx-auto px-6">
+      <div class="container mx-auto px-12">
         <div class="grid gap-8 md:grid-cols-2 items-center">
           <div class="relative" data-aos="fade-up" data-aos-delay="100">
             <img
@@ -460,6 +508,117 @@
       </div>
     </section>
 
+
+
+
+
+    <!-- Services ------------------------------------------------------------------------------------------------------------------------------------------------>
+
+
+
+    <section id="services" class="services bg-gray-50 py-16">
+      <!-- Section Title -->
+       <div class="container mx-auto px-12 text-center mb-12" data-aos="fade-up">
+        <section
+          id="about"
+          class="relative flex items-center justify-center bg-gray-50"
+        >
+          <span
+            class="absolute text-gray-100 text-5xl font-bold uppercase tracking-wide select-none"
+          >
+            services
+          </span>
+
+          <h2 class="relative text-gray-600 text-3xl font-bold z-10 mt-8">
+SERVICES
+          </h2>
+        </section>
+
+        <p class="mt-4">
+          Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+          consectetur velit
+        </p>
+      </div>
+    
+      <!-- Service Items -->
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-12">
+        <!-- Service Item 1 -->
+        <div
+          class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
+          <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
+            <i class="bi bi-activity text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Nesciunt Mete</h3>
+          <p class="text-gray-600">
+            Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.
+          </p>
+        </div>
+    
+        <!-- Service Item 2 -->
+        <div
+          class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
+          <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
+            <i class="bi bi-broadcast text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Eosle Commodi</h3>
+          <p class="text-gray-600">
+            Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
+          </p>
+        </div>
+    
+        <!-- Service Item 3 -->
+        <div
+          class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
+          <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
+            <i class="bi bi-easel text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Ledo Markt</h3>
+          <p class="text-gray-600">
+            Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
+          </p>
+        </div>
+    
+        <!-- Service Item 4 -->
+        <div
+          class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
+          <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
+            <i class="bi bi-bounding-box-circles text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Asperiores Commodit</h3>
+          <p class="text-gray-600">
+            Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.
+          </p>
+        </div>
+    
+        <!-- Service Item 5 -->
+        <div
+          class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
+          <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
+            <i class="bi bi-calendar4-week text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Velit Doloremque</h3>
+          <p class="text-gray-600">
+            Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
+          </p>
+        </div>
+    
+        <!-- Service Item 6 -->
+        <div
+          class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
+          <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
+            <i class="bi bi-chat-square-text text-3xl"></i>
+          </div>
+          <h3 class="text-xl font-bold text-gray-800 mb-4">Dolori Architecto</h3>
+          <p class="text-gray-600">
+            Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    
+
+
     <!-- Footer  ----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <footer id="footer" class="bg-background-color text-default-color relative">
@@ -495,108 +654,82 @@
         </div>
       </div>
 
-      <div class="container mx-auto py-16">
-        <div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+      <div class="container mx-auto py-16 px-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Footer About -->
-          <div class="footer-about col-span-1">
+          <div class="footer-about">
             <a href="index.html" class="flex items-center">
-              <span class="sitename text-gray-600 text-2xl font-semibold"
-                >eNno</span
-              >
+              <span class="sitename text-gray-600 text-xl md:text-2xl font-semibold">eNno</span>
             </a>
-            <div class="footer-contact pt-4">
+            <div class="footer-contact pt-4 text-sm md:text-base">
               <p>A108 Adam Street</p>
               <p>New York, NY 535022</p>
               <p class="mt-3">
-                <strong class="text-gray-600">Phone:</strong
-                ><span class="underline"> +1 5589 55488 55</span>
+                <strong class="text-gray-600">Phone:</strong>
+                <span class="underline">+1 5589 55488 55</span>
               </p>
               <p>
                 <strong class="text-gray-600">Email:</strong> info@example.com
               </p>
             </div>
           </div>
-
+    
           <!-- Useful Links -->
-          <div class="footer-links col-span-1">
+          <div class="footer-links">
             <h4 class="font-bold text-lg pb-3 text-gray-600">Useful Links</h4>
-            <ul class="space-y-3 mt-4">
+            <ul class="space-y-3 mt-4 text-sm">
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i>
-                  Home</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Home
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i> About
-                  us</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> About us
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i>
-                  Services</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Services
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i> Terms
-                  of service</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Terms of service
+                </a>
               </li>
             </ul>
           </div>
-
+    
           <!-- Our Services -->
-          <div class="footer-links col-span-1">
+          <div class="footer-links">
             <h4 class="font-bold text-lg pb-3 text-gray-600">Our Services</h4>
-            <ul class="space-y-3 mt-4">
+            <ul class="space-y-3 mt-4 text-sm">
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i> Web
-                  Design</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Web Design
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i> Web
-                  Development</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Web Development
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i>
-                  Product Management</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Product Management
+                </a>
               </li>
               <li>
-                <a
-                  href="#"
-                  class="flex items-center text-default-color opacity-80 hover:text-green-600"
-                  ><i class="bi bi-chevron-right mr-2 text-green-600"></i>
-                  Marketing</a
-                >
+                <a href="#" class="flex items-center opacity-80 hover:text-green-600">
+                  <i class="bi bi-chevron-right mr-2 text-green-600"></i> Marketing
+                </a>
               </li>
             </ul>
           </div>
-
+    
           <!-- Follow Us -->
-          <div class="col-span-1">
+       <div class="col-span-1">
             <h4 class="font-bold text-lg pb-3 text-gray-600">Follow Us</h4>
             <p class="mt-4">
               Cras fermentum odio eu feugiat lide par naso tierra videa magna
