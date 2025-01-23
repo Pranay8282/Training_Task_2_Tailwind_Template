@@ -41,4 +41,28 @@
 }
 
 
+
+.swiper-pagination {
+  position: relative;
+  align-self: center;
+  transition: .3s opacity;
+  transform: translate3d(0, 0, 0);
+  text-align: center;
+  z-index: 10;
+  margin-top: 43px;
+}
+
+
+.swiper-pagination-bullet-active {
+  background-color: oklch(0.627 0.194 149.214) !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgb(187, 183, 183);
+
+}
+
+
+
 /*  */
+
