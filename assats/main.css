@@ -31,7 +31,7 @@
   align-self: flex-end;
   bottom: 20px;
   right: 20px;
-  background-color: #16a34a;
+  background-color:  oklch(0.723 0.219 149.579);
   color: #000;
   border: none;
   border-radius: 50%;
@@ -61,7 +61,7 @@ z-index: 10;
   width: 14px;  
   height: 14px;
   background-color: #fff ;
-  border: 3px solid oklch(0.627 0.194 149.214) ;
+  border: 1px solid oklch(0.627 0.194 149.214) ;
 }
 
 

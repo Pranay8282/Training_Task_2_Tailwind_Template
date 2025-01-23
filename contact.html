@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eNno-contact</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assats/main.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+  
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <style>
+      /* Dropdown visibility styles */
+      .dropdown ul {
+        display: none;
+      }
+
+      .dropdown:hover > ul {
+        display: block;
+      }
+    </style>
+</head>
+<body>
+        <!-- Header --------------------------------------------------------------------------------------------------------->
+
+        <header class="sticky top-0 z-50 bg-white shadow-sm">
+            <div
+              class="container mx-auto flex items-center justify-between px-12 py-4"
+            >
+              <a href="index.html" class="flex items-center">
+                <h1 class="text-3xl font-bold text-gray-600">eNno</h1>
+              </a>
+      
+              <nav class="hidden md:flex">
+                <ul class="flex items-center space-x-6 text-xs lg:text-base">
+                  <li>
+                    <a
+                      href="index.html"
+                      class="text-gray-600 hover:text-green-500 transition"
+                      >Home</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="about.html"
+                      class="text-gray-600 hover:text-green-500 transition"
+                      >About</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="services.html"
+                      class="text-gray-600 hover:text-green-500 transition"
+                      >Services</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="portfolio.html"
+                      class="text-gray-600 hover:text-green-500 transition"
+                      >Portfolio</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="team.html"
+                      class="text-gray-600 hover:text-green-500 transition"
+                      >Team</a
+                    >
+                  </li>
+                  <li class="relative dropdown">
+                    <a
+                      href="#"
+                      class="flex items-center text-gray-600 hover:text-green-500 transition"
+                    >
+                      Dropdown
+                      <svg
+                        class="ml-1 w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg>
+                    </a>
+                    <ul
+                      class="absolute left-0 mt-2 bg-white border rounded shadow-lg w-40"
+                    >
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                          >Dropdown 1</a
+                        >
+                      </li>
+                      <li class="relative dropdown ">
+                        <a
+                          href="#"
+                          class=" flex w-auto block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                          >Deep Dropdown
+                          
+                          <svg
+                        class="ml-1 w-4 h-4"
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M19 9l-7 7-7-7"
+                        />
+                      </svg></a
+                        >
+                        <ul
+                          class="absolute left-full top-0 bg-white border rounded shadow-lg w-40"
+                        >
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                              >Deep Dropdown 1</a
+                            >
+                          </li>
+                          <li>
+                            <a
+                              href="#"
+                              class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                              >Deep Dropdown 2
+                              
+                              </a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                          >Dropdown 2</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                          >Dropdown 3</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                          >Dropdown 4</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="#"
+                          class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                          >Dropdown 5</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a
+                      href="contact.html"
+                      class="text-gray-600 hover:text-green-500 transition"
+                      >Contact</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#about"
+      
+                      class="bg-green-500 text-white px-4 py-2 rounded-full hover:bg-green-700 transition"
+                    >
+                      Get Started
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+      
+              <button
+                id="mobile-nav-toggle"
+                class="md:hidden text-gray-600 focus:outline-none"
+              >
+                <i class="bi bi-list h-11"></i>
+              </button>
+            </div>
+      
+            <nav id="mobile-navmenu" class="hidden md:hidden bg-white shadow-lg">
+              <ul>
+                <li>
+                  <a
+                    href="index.html"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="about.html"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="services.html"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Services</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="portfolio.html"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="team.html"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Team</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="contact.html"
+                    class="block px-4 py-2 text-gray-600 hover:bg-gray-100"
+                    >Contact</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="block Nav-Start px-4 py-2 mt-2 text-center text-white bg-green-500 hover:bg-green-700 rounded-full"
+                  >
+                    Get Started
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </header>
+
+
+
+
+
+ <!-- Contact Section ---------------------------------------------------------------------------------------------------------------------------------------->
+
+ <section id="contact" class="contact bg-gray-50 section py-12 bg-gray-50 ">
+ 
+    <div class="container mx-auto  text-center mb-12" data-aos="fade-up">
+      <section
+        id="about"
+        class="relative flex items-center justify-center "
+      >
+        <span
+          class="absolute text-gray-100 text-5xl font-bold uppercase tracking-wide select-none "
+        >
+          contact
+        </span>
+
+        <h2 class="relative text-gray-600 text-3xl font-bold z-10 mt-8  transform transition-transform cursor-pointer hover:-translate-y-2">
+          CONTACT
+        </h2>
+      </section>
+
+      <p class="mt-4">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
+
+  
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 lg:grid-cols-3  gap-8 px-12">
+        <div class="bg-white p-6 rounded-lg shadow-md space-y-8" data-aos="fade-up" data-aos-delay="100">
+          <div class="flex items-start w-auto  space-x-4" data-aos="fade-up" data-aos-delay="200">
+            <i class="bi bi-geo-alt text-green-500 bg-green-100 rounded-full p-2 text-xl"></i>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-800">Address</h3>
+              <p class="text-gray-600">A108 Adam Street, New York, NY 535022</p>
+            </div>
+          </div>
+  
+          <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="300">
+            <i class="bi bi-telephone text-green-500 bg-green-100 rounded-full p-3 text-xl"></i>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-800">Call Us</h3>
+              <p class="text-gray-600 underline">+1 5589 55488 55</p>
+            </div>
+          </div>
+  
+          <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="400">
+            <i class="bi bi-envelope text-green-500 bg-green-100 rounded-full p-2 text-xl"></i>
+            <div>
+              <h3 class="font-semibold text-lg text-gray-800">Email Us</h3>
+              <p class="text-gray-600">info@example.com</p>
+            </div>
+          </div>
+  
+          <!-- Google Map -->
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus" 
+            frameborder="0"
+            class="w-full h-64"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+  
+        <!-- Contact Form -->
+        <div
+  class="bg-white p-6 rounded-lg col-span-2 shadow-md"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <form action="forms/contact.php" method="post" class="space-y-6">
+    <!-- Name and Email -->
+    <div class="flex flex-col sm:flex-row sm:gap-8 pt-2">
+      <div class="flex-1">
+        <label
+          for="name-field"
+          class="block text-sm font-medium text-gray-700"
+        >
+          Your Name
+        </label>
+        <input
+          type="text"
+          name="name"
+          id="name-field"
+          class="block  w-auto lg:w-full border-gray-300 border h-12 mt-2 focus:ring-green-500 focus:border-green-500"
+          required
+        />  
+      </div>
+      <div class="flex-1 mt-4 sm:mt-0">
+        <label
+          for="email-field"
+          class="block text-sm font-medium text-gray-700"
+        >
+          Your Email
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email-field"
+          class="block   w-auto lg:w-full border-gray-300 border h-12 mt-2 focus:ring-green-500 focus:border-green-500"
+          required
+        />
+      </div>
+    </div>
+
+    <!-- Subject -->
+    <div class="pt-4">
+      <label
+        for="subject-field"
+        class="block text-sm font-medium text-gray-700"
+      >
+        Subject
+      </label>
+      <input
+        type="text"
+        name="subject"
+        id="subject-field"
+        class="block w-full border-gray-300 border h-12 mt-2 focus:ring-green-500 focus:border-green-500"
+        required
+      />
+    </div>
+
+    <!-- Message -->
+    <div class="pt-4">
+      <label
+        for="message-field"
+        class="block text-sm font-medium text-gray-700"
+      >
+        Message
+      </label>
+      <textarea
+        name="message"
+        id="message-field"
+        rows="5"
+        class="block w-full border-gray-300 border mt-2 focus:ring-green-500 focus:border-green-500"
+        required
+      ></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div class="text-center">
+      <button
+        type="submit"
+        class="bg-green-500 text-white px-6 py-2 rounded-full mt-[33px] shadow-md hover:bg-green-500 transition duration-300"
+      >
+        Send Message
+      </button>
+    </div>
+  </form>
+</div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+               <!-- Footer  ----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+    <footer id="footer" class="bg-background-color text-default-color relative">
+        <div
+          class="bg-opacity-97 bg-gray-50 bg-gradient-to-t to-transparent py-12 px-12"
+        >
+          <div class="container mx-auto text-center">
+            <div class="lg:w-1/2 mx-auto mb-6">
+              <h4 class="text-3xl text-gray-600 font-bold">
+                Join Our Newsletter
+              </h4>
+              <p class="mt-4 mb-4">
+                Subscribe to our newsletter and receive the latest news about our
+                products and services!
+              </p>
+              <form action="#" method="#" class="#">
+                <div
+                  class="flex items-center border-1 border-slate-950 rounded-full shadow-md focus-within: border-green-500 transition duration-300"
+                >
+                  <input
+                    type="email"
+                    name="email"
+                    class="w-full bg-gray-50 text-gray-600 border-0 p-2 focus:outline-none"
+                  />
+                  <input
+                    type="submit"
+                    value="Subscribe"
+                    class="py-2 px-8 text-contrast-color bg-green-500 text-white font-medium rounded-full hover:bg-green-700 transition duration-300"
+                  />
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container mx-auto py-16 px-12">
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Footer About -->
+            <div class="footer-about">
+              <a href="index.html" class="flex items-center">
+                <span class="sitename text-gray-600 text-xl md:text-2xl font-semibold">eNno</span>
+              </a>
+              <div class="footer-contact pt-4 text-sm md:text-base">
+                <p>A108 Adam Street</p>
+                <p>New York, NY 535022</p>
+                <p class="mt-3">
+                  <strong class="text-gray-600">Phone:</strong>
+                  <span class="underline">+1 5589 55488 55</span>
+                </p>
+                <p>
+                  <strong class="text-gray-600">Email:</strong> info@example.com
+                </p>
+              </div>
+            </div>
+      
+            <!-- Useful Links -->
+            <div class="footer-links">
+              <h4 class="font-bold text-lg pb-3 text-gray-600">Useful Links</h4>
+              <ul class="space-y-3 mt-4 text-sm">
+                <li>
+                  <a href="index.html" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Home
+                  </a>
+                </li>
+                <li>
+                  <a href="about.html" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> About us
+                  </a>
+                </li>
+                <li>
+                  <a href="services.html" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Services
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Terms of service
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Our Services -->
+            <div class="footer-links">
+              <h4 class="font-bold text-lg pb-3 text-gray-600">Our Services</h4>
+              <ul class="space-y-3 mt-4 text-sm">
+                <li>
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Web Design
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Web Development
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Product Management
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-500">
+                    <i class="bi bi-chevron-right mr-2 text-green-500"></i> Marketing
+                  </a>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Follow Us -->
+         <div class="col-span-1">
+              <h4 class="font-bold text-lg pb-3 text-gray-600">Follow Us</h4>
+              <p class="mt-4">
+                Cras fermentum odio eu feugiat lide par naso tierra videa magna
+                derita valies
+              </p>
+              <div class="social-links flex space-x-4 mt-4">
+                <a
+                  href="https://x.com/?lang=en&mx=2"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-500 hover:border-green-500 transition"
+                  ><i class="bi bi-twitter-x"></i
+                ></a>
+                <a
+                  href="https://www.facebook.com/"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-500 hover:border-green-500 transition"
+                  ><i class="bi bi-facebook"></i
+                ></a>
+                <a
+                  href="https://www.instagram.com/?hl=en"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-500 hover:border-green-500 transition"
+                  ><i class="bi bi-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-500 hover:border-green-500 transition"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="container mx-auto text-center mt-12 pb-8 border-t-2">
+          <p class="text-sm pt-4">
+            &copy; <span>Copyright</span>
+            <strong class="px-1 sitename">eNno</strong>
+            <span>All Rights Reserved</span>
+          </p>
+          <div class="credits mt-4 text-xs">
+            Designed by
+            <a
+              href="https://github.com/Pranay8282"
+              class="text-green-500 opacity-70 hover:text-green-400"
+              >Pranay Patel</a
+            >
+            Distributed by
+            <a
+              href="https://sanskartechnolab.com/"
+              class="text-green-500 opacity-70 hover:text-green-400"
+              >sanskartechnolab</a
+            >
+          </div>
+        </div>
+  
+        <button
+          class="scroll-to-top rounded-fill"
+          onclick="scrollToTop()"
+          style="
+            font-weight: bold;
+            color: white;
+            font-size: 25px;
+            right: 15px;
+            bottom: 15px;
+            width: 40px;
+            height: 40px;
+          "
+        >
+          ↑
+        </button>
+      </footer>
+
+      <script>
+         const mobileToggle = document.getElementById("mobile-nav-toggle");
+      const mobileNav = document.getElementById("mobile-navmenu");
+
+      mobileToggle.addEventListener("click", () => {
+        mobileNav.classList.toggle("hidden");
+      });
+
+      function scrollToTop() {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      }
+
+      window.onscroll = function () {
+        const button = document.querySelector(".scroll-to-top");
+        if (
+          document.body.scrollTop > 50 ||
+          document.documentElement.scrollTop > 50
+        ) {
+          button.style.display = "block";
+        } else {
+          button.style.display = "none";
+        }
+      };
+      </script>
+</body>
+</html>
