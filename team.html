@@ -3,13 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>eNno-Services</title>
+    <title>eNno-Team</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="assats/main.css" />
+    <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper/swiper-bundle.min.css"
+/>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
       /* Dropdown visibility styles */
       .dropdown ul {
@@ -22,8 +27,6 @@
     </style>
 </head>
 <body>
-    <!-- Header --------------------------------------------------------------------------------------------------------->
-
     <header class="sticky top-0 z-50 bg-white shadow-sm">
         <div
           class="container mx-auto flex items-center justify-between px-12 py-4"
@@ -174,7 +177,7 @@
               </li>
               <li>
                 <a
-                  href="#contact""
+                  href="#contact"
                   class="text-gray-600 hover:text-green-600 transition"
                   >Contact</a
                 >
@@ -182,6 +185,7 @@
               <li>
                 <a
                   href="#about"
+  
                   class="bg-green-600 text-white px-4 py-2 rounded-full hover:bg-green-700 transition"
                 >
                   Get Started
@@ -253,117 +257,117 @@
           </ul>
         </nav>
       </header>
-
-
-
-         <!-- Services ------------------------------------------------------------------------------------------------------------------------------------------------>
-
-
-
-    <section id="services" class="services bg-gray-50 py-16">
-        <!-- Section Title -->
-         <div class="container mx-auto px-12 text-center mb-12" data-aos="fade-up">
-          <section
-            id="about"
-            class="relative flex items-center justify-center bg-gray-50"
-          >
-            <span
-              class="absolute text-gray-100 text-5xl font-bold uppercase tracking-wide select-none "
-            >
-              services
-            </span>
   
-            <h2 class="relative text-gray-600 text-3xl font-bold z-10 mt-8  transform transition-transform cursor-pointer hover:-translate-y-2">
-  SERVICES
-            </h2>
-          </section>
-  
-          <p class="mt-4">
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
-          </p>
-        </div>
-      
-        <!-- Service Items -->
-        <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-12">
-          <!-- Service Item 1 -->
-          <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
-              <i class="bi bi-activity text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-600">Nesciunt Mete</h3>
-            <p class="text-gray-600">
-              Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure perferendis tempore et consequatur.
-            </p>
-          </div>
-      
-          <!-- Service Item 2 -->
-          <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
-              <i class="bi bi-broadcast text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-600">Eosle Commodi</h3>
-            <p class="text-gray-600">
-              Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut nesciunt dolorem.
-            </p>
-          </div>
-      
-          <!-- Service Item 3 -->
-          <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
-              <i class="bi bi-easel text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-600">Ledo Markt</h3>
-            <p class="text-gray-600">
-              Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci eos earum corrupti.
-            </p>
-          </div>
-      
-          <!-- Service Item 4 -->
-          <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
-              <i class="bi bi-bounding-box-circles text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-600">Asperiores Commodit</h3>
-            <p class="text-gray-600">
-              Non et temporibus minus omnis sed dolor esse consequatur. Cupiditate sed error ea fuga sit provident adipisci neque.
-            </p>
-          </div>
-      
-          <!-- Service Item 5 -->
-          <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
-              <i class="bi bi-calendar4-week text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-600">Velit Doloremque</h3>
-            <p class="text-gray-600">
-              Cumque et suscipit saepe. Est maiores autem enim facilis ut aut ipsam corporis aut. Sed animi at autem alias eius labore.
-            </p>
-          </div>
-      
-          <!-- Service Item 6 -->
-          <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-600 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-600 text-white flex items-center justify-center rounded mb-6">
-              <i class="bi bi-chat-square-text text-3xl"></i>
-            </div>
-            <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-600">Dolori Architecto</h3>
-            <p class="text-gray-600">
-              Hic molestias ea quibusdam eos. Fugiat enim doloremque aut neque non et debitis iure. Corrupti recusandae ducimus enim.
-            </p>
-          </div>
-        </div>
+
+
+      <!-- Team ------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+  <section id="team" class="py-16">
+    <!-- Section Title -->
+    <div class="container mx-auto px-12 text-center mb-12" data-aos="fade-up">
+      <section
+        id="about"
+        class="relative flex items-center justify-center "
+      >
+        <span
+          class="absolute text-gray-100 text-5xl font-bold uppercase tracking-wide select-none "
+        >
+          TEAM
+        </span>
+
+        <h2 class="relative text-gray-600 text-3xl font-bold z-10 mt-8  transform transition-transform cursor-pointer hover:-translate-y-2">
+          TEAM
+        </h2>
       </section>
+
+      <p class="mt-4">
+        Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
+        consectetur velit
+      </p>
+    </div>
   
+    <div class="container mx-auto px-12">
+      <div class="grid grid-cols-1 sm:grid-cols-2 sm:col-span-2 lg:grid-cols-3 gap-8">
+        <!-- Team Member 1 -->
+        <div class="relative group" >
+          <div class="overflow-hidden ">
+            <img src="Images/team-1.jpg" class="img-fluid w-full h-auto" alt="">
+          </div>
+          <div class=" bg-white text-gray-800 shadow-lg p-6 absolute inset-x-5 -bottom-10 transition-all duration-500 group-hover:bottom-5 ">
+            <h4 class="font-bold text-lg mb-2 relative pb-2  after:block after:w-12 after:h-[1px] after:bg-gray-400 after:absolute after:left-0 after:bottom-0">Walter White</h4>
+            <span class="text-sm italic text-xs">Chief Executive Officer</span>
+            <div class="social absolute bottom-4 right-4 flex space-x-3 sm:space-x-2">
+              <a href="#" class="text-gray-500 hover:text-black-500 transition-colors">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-pink-500 transition-colors">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-blue-700 transition-colors">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class=" relative group" data-aos="fade-up" data-aos-delay="200">
+          <div class=" overflow-hidden ">
+            <img src="Images/team-2.jpg" class="img-fluid w-full h-auto" alt="">
+          </div>
+          <div class=" bg-white text-gray-800 shadow-lg p-6 absolute inset-x-5 -bottom-10 transition-all duration-500 group-hover:bottom-5">
+            <h4 class="font-bold text-lg mb-2 relative pb-2  after:block after:w-12 after:h-[1px] after:bg-gray-400 after:absolute after:left-0 after:bottom-0">Sarah Jhonson</h4>
+            <span class="text-sm italic">Product Manager</span>
+            <div class="social absolute bottom-4 right-4 flex space-x-3 sm:space-x-2">
+              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-pink-500 transition-colors">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-blue-700 transition-colors">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="member relative group " data-aos="fade-up" data-aos-delay="300">
+          <div class="pic overflow-hidden">
+            <img src="Images/team-3.jpg" class="img-fluid w-full h-auto" alt="">
+          </div>
+          <div class=" bg-white text-gray-800 shadow-lg p-6 absolute inset-x-5 -bottom-10 transition-all duration-500 group-hover:bottom-5">
+            <h4 class="font-bold text-lg mb-2 relative pb-2 after:content-[''] after:block after:w-12 after:h-[1px] after:bg-gray-400 after:absolute after:left-0 after:bottom-0">William Anderson</h4>
+            <span class="text-sm italic">CTO</span>
+            <div class="social absolute bottom-4 right-4 flex space-x-3 sm:space-x-2">
+              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                <i class="bi bi-twitter-x"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+                <i class="bi bi-facebook"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-pink-500 transition-colors">
+                <i class="bi bi-instagram"></i>
+              </a>
+              <a href="#" class="text-gray-500 hover:text-blue-700 transition-colors">
+                <i class="bi bi-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
 
 
-               <!-- Footer  ----------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+          <!-- Footer  ----------------------------------------------------------------------------------------------------------------------------------------------------------->
 
     <footer id="footer" class="bg-background-color text-default-color relative">
         <div
@@ -374,7 +378,7 @@
               <h4 class="text-3xl text-gray-600 font-bold">
                 Join Our Newsletter
               </h4>
-              <p class="mt-4 mb-4">
+              <p class="mt-4 mb-8">
                 Subscribe to our newsletter and receive the latest news about our
                 products and services!
               </p>
@@ -385,7 +389,7 @@
                   <input
                     type="email"
                     name="email"
-                    class="w-full bg-gray-50 text-gray-600 border-0 p-2 focus:outline-none"
+                    class="w-full bg-gray-50 text-green-600 border-0 p-2 focus:outline-none"
                   />
                   <input
                     type="submit"
@@ -433,7 +437,7 @@
                   </a>
                 </li>
                 <li>
-                  <a href="services.html" class="flex items-center opacity-80 hover:text-green-600">
+                  <a href="#" class="flex items-center opacity-80 hover:text-green-600">
                     <i class="bi bi-chevron-right mr-2 text-green-600"></i> Services
                   </a>
                 </li>
@@ -482,22 +486,22 @@
               <div class="social-links flex space-x-4 mt-4">
                 <a
                   href="https://x.com/?lang=en&mx=2"
-                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-600 hover:border-green-600 transition"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border  opacity-60 hover:text-neutral-950 hover:bg-green-600 hover:border-green-400 transition"
                   ><i class="bi bi-twitter-x"></i
                 ></a>
                 <a
                   href="https://www.facebook.com/"
-                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-600 hover:border-green-600 transition"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border  opacity-60 hover:text-blue-500 hover:bg-green-600 hover:border-green-400 transition"
                   ><i class="bi bi-facebook"></i
                 ></a>
                 <a
                   href="https://www.instagram.com/?hl=en"
-                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-600 hover:border-green-600 transition"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border  opacity-60 hover:text-pink-700 hover:bg-green-600 hover:border-green-400 transition"
                   ><i class="bi bi-instagram"></i
                 ></a>
                 <a
                   href="https://www.linkedin.com/"
-                  class="w-10 h-10 flex items-center justify-center rounded-full border border-default-color text-default-color opacity-60 hover:text-green-600 hover:border-green-600 transition"
+                  class="w-10 h-10 flex items-center justify-center rounded-full border  opacity-60 hover:text-blue-700 hover:bg-green-600 hover:border-green-400 transition"
                   ><i class="bi bi-linkedin"></i
                 ></a>
               </div>
@@ -545,32 +549,32 @@
       </footer>
 
       <script>
-         const mobileToggle = document.getElementById("mobile-nav-toggle");
-      const mobileNav = document.getElementById("mobile-navmenu");
-
-      mobileToggle.addEventListener("click", () => {
-        mobileNav.classList.toggle("hidden");
-      });
-
-      function scrollToTop() {
-        window.scrollTo({
-          top: 0,
-          behavior: "smooth",
-        });
-      }
-
-      window.onscroll = function () {
-        const button = document.querySelector(".scroll-to-top");
-        if (
-          document.body.scrollTop > 50 ||
-          document.documentElement.scrollTop > 50
-        ) {
-          button.style.display = "block";
-        } else {
-          button.style.display = "none";
-        }
-      };
-      </script>
+        // Mobile menu toggle functionality
+        const mobileToggle = document.getElementById("mobile-nav-toggle");
+        const mobileNav = document.getElementById("mobile-navmenu");
   
+        mobileToggle.addEventListener("click", () => {
+          mobileNav.classList.toggle("hidden");
+        });
+  
+        function scrollToTop() {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }
+  
+        window.onscroll = function () {
+          const button = document.querySelector(".scroll-to-top");
+          if (
+            document.body.scrollTop > 50 ||
+            document.documentElement.scrollTop > 50
+          ) {
+            button.style.display = "block";
+          } else {
+            button.style.display = "none";
+          }
+        };
+      </script>
 </body>
 </html>
