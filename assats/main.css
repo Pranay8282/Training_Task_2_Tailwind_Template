@@ -1,4 +1,4 @@
-/* @keyframes up-down {
+@keyframes up-down {
   0% {
     transform: translateY(10px);
   }
@@ -10,7 +10,7 @@
   animation: up-down 2s ease-in-out infinite alternate-reverse;
 }
 
- */
+
 
 @media screen and (max-width: 1023px) {
   .Nav-Start {
@@ -51,4 +51,6 @@
   border: 1px solid oklch(0.627 0.194 149.214);
 }
 
-/*  */
+/* 
+ 
+*/

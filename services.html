@@ -10,6 +10,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <link rel="stylesheet" href="assats/main.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
       /* Dropdown visibility styles */
       .dropdown ul {
@@ -287,7 +288,7 @@
         <!-- Service Items -->
         <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-12">
           <!-- Service Item 1 -->
-          <div
+          <div data-aos="fade-up" data-aos-delay="100"
             class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition">
             <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6">
               <i class="bi bi-activity text-3xl"></i>
@@ -300,8 +301,8 @@
       
           <!-- Service Item 2 -->
           <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition">
-            <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6">
+            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6" >
               <i class="bi bi-broadcast text-3xl"></i>
             </div>
             <h3 class="text-xl font-bold text-gray-800 mb-4 hover:text-green-500">Eosle Commodi</h3>
@@ -312,7 +313,7 @@
       
           <!-- Service Item 3 -->
           <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition">
+            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition" data-aos="fade-up" data-aos-delay="300">
             <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6">
               <i class="bi bi-easel text-3xl"></i>
             </div>
@@ -324,7 +325,7 @@
       
           <!-- Service Item 4 -->
           <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition">
+            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition" data-aos="fade-up" data-aos-delay="400">
             <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6">
               <i class="bi bi-bounding-box-circles text-3xl"></i>
             </div>
@@ -336,7 +337,7 @@
       
           <!-- Service Item 5 -->
           <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition">
+            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition" data-aos="fade-up" data-aos-delay="500">
             <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6">
               <i class="bi bi-calendar4-week text-3xl"></i>
             </div>
@@ -348,7 +349,7 @@
       
           <!-- Service Item 6 -->
           <div
-            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition">
+            class="service-item bg-white shadow-md border border-gray-200 p-8 rounded-lg text-center hover:border-green-500 transition" data-aos="fade-up" data-aos-delay="600">
             <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mb-6">
               <i class="bi bi-chat-square-text text-3xl"></i>
             </div>
@@ -580,6 +581,9 @@ navLinks.forEach(link => {
   }
 });
       </script>
-  
+     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+     <script>
+       AOS.init();
+     </script>
 </body>
 </html>
