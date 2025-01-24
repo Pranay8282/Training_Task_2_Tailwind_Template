@@ -9,15 +9,7 @@
 .animated {
   animation: up-down 2s ease-in-out infinite alternate-reverse;
 }
-.bg-accent {
-  background-color: var(--accent-color);
-}
-.text-contrast {
-  color: var(--contrast-color);
-}
-.text-accent {
-  color: var(--accent-color);
-}
+
  */
 
 @media screen and (max-width: 1023px) {
@@ -31,7 +23,7 @@
   align-self: flex-end;
   bottom: 20px;
   right: 20px;
-  background-color:  oklch(0.723 0.219 149.579);
+  background-color: oklch(0.723 0.219 149.579);
   color: #000;
   border: none;
   border-radius: 50%;
@@ -40,30 +32,23 @@
   cursor: pointer;
 }
 
-
-.swiper-pagination  {
-position: relative  !important;
-margin-top: 30px !important;
-text-align: center;
-transition: .3s opacity;
-transform: translate3d(0,0,0);
-z-index: 10;
+.swiper-pagination {
+  position: relative !important;
+  margin-top: 30px !important;
+  text-align: center;
+  transition: 0.3s opacity;
+  transform: translate3d(0, 0, 0);
+  z-index: 10;
 }
 .swiper-pagination-bullet-active {
   background-color: oklch(0.627 0.194 149.214) !important;
-
 }
 
-
-
-
-.swiper-pagination-clickable .swiper-pagination-bullet{
-  width: 14px;  
+.swiper-pagination-clickable .swiper-pagination-bullet {
+  width: 14px;
   height: 14px;
-  background-color: #fff ;
-  border: 1px solid oklch(0.627 0.194 149.214) ;
+  background-color: #fff;
+  border: 1px solid oklch(0.627 0.194 149.214);
 }
-
 
 /*  */
-

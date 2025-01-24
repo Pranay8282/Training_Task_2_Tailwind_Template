@@ -570,6 +570,15 @@
           button.style.display = "none";
         }
       };
+
+
+      const navLinks = document.querySelectorAll("header nav a");
+
+navLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("text-green-500");
+  }
+});
       </script>
   
 </body>

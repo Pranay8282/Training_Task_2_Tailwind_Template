@@ -332,90 +332,42 @@
   
         <!-- Contact Form -->
         <div
-  class="bg-white p-6 rounded-lg col-span-2 shadow-md"
-  data-aos="fade-up"
-  data-aos-delay="200"
->
-  <form action="forms/contact.php" method="post" class="space-y-6">
-    <!-- Name and Email -->
-    <div class="flex flex-col sm:flex-row sm:gap-8 pt-2">
-      <div class="flex-1">
-        <label
-          for="name-field"
-          class="block text-sm font-medium text-gray-700"
-        >
-          Your Name
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="name-field"
-          class="block  w-auto lg:w-full border-gray-300 border h-12 mt-2 focus:ring-green-500 focus:border-green-500"
-          required
-        />  
+        class="bg-white p-6 rounded-lg col-span-2 shadow-md"
+        data-aos="fade-up"
+        data-aos-delay="200"
+      >
+        <form action="" method="post" class="space-y-6">
+          <!-- Name and Email -->
+          <div class="col-span-12 lg:col-span-7 mt-2">
+            <form action="#" method="post" class="space-y-6" data-aos="fade-up" data-aos-delay="200">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div>
+                  <label  class="block pb-2 text-sm text-gray-600 font-medium">Your Name</label>
+                  <input type="text" name="name" id="name-field" class="w-full border border-gray-300 mt-2 rounded-lg p-2 focus:outline-none text-green-500 focus:ring focus:ring-green-500" required>
+                </div>
+                <div>
+                  <label  class="block pb-2 text-sm text-gray-600 font-medium">Your Email</label>
+                  <input type="email" name="email" id="email-field" class="w-full border border-gray-300 mt-2 rounded-lg p-2 text-green-500 focus:outline-none focus:ring focus:ring-green-500" required>
+                </div>
+              </div>
+              <div>
+                <label  class="block pb-2 text-sm text-gray-500 mt-4 font-medium">Subject</label>
+                <input type="text" name="subject" id="subject-field" class="w-full border border-gray-300 mt-2 text-green-500 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-500" required>
+              </div>
+              <div>
+                <label  class="block pb-2 text-sm font-medium text-gray-500 mt-4">Message</label>
+                <textarea name="message" id="message-field" rows="10" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring focus:ring-green-500" required></textarea>
+              </div>
+              <div class="text-center">
+                <button type="submit" class="bg-green-500 text-white mt-4 px-6 py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-300">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+          
+        </form>
       </div>
-      <div class="flex-1 mt-4 sm:mt-0">
-        <label
-          for="email-field"
-          class="block text-sm font-medium text-gray-700"
-        >
-          Your Email
-        </label>
-        <input
-          type="email"
-          name="email"
-          id="email-field"
-          class="block   w-auto lg:w-full border-gray-300 border h-12 mt-2 focus:ring-green-500 focus:border-green-500"
-          required
-        />
-      </div>
-    </div>
-
-    <!-- Subject -->
-    <div class="pt-4">
-      <label
-        for="subject-field"
-        class="block text-sm font-medium text-gray-700"
-      >
-        Subject
-      </label>
-      <input
-        type="text"
-        name="subject"
-        id="subject-field"
-        class="block w-full border-gray-300 border h-12 mt-2 focus:ring-green-500 focus:border-green-500"
-        required
-      />
-    </div>
-
-    <!-- Message -->
-    <div class="pt-4">
-      <label
-        for="message-field"
-        class="block text-sm font-medium text-gray-700"
-      >
-        Message
-      </label>
-      <textarea
-        name="message"
-        id="message-field"
-        rows="5"
-        class="block w-full border-gray-300 border mt-2 focus:ring-green-500 focus:border-green-500"
-        required
-      ></textarea>
-    </div>
-
-    <!-- Submit Button -->
-    <div class="text-center">
-      <button
-        type="submit"
-        class="bg-green-500 text-white px-6 py-2 rounded-full mt-[33px] shadow-md hover:bg-green-500 transition duration-300"
-      >
-        Send Message
-      </button>
-    </div>
-  </form>
-</div>
 
       </div>
     </div>
@@ -636,6 +588,14 @@
           button.style.display = "none";
         }
       };
+
+      const navLinks = document.querySelectorAll("header nav a");
+
+navLinks.forEach(link => {
+  if (link.href === window.location.href) {
+    link.classList.add("text-green-500");
+  } 
+});
       </script>
 </body>
 </html>
