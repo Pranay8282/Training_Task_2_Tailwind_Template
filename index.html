@@ -14,7 +14,8 @@
     <link
   rel="stylesheet"
   href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.min.js"></script>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
       /* Dropdown visibility styles */
@@ -315,41 +316,41 @@
     <!-- Feature sections --------------------------------------------------------------------------------------------------------------------------------------->
 
     <section id="featured-services" class="py-12">
-      <div class="container mx-auto px-auto  lg:px-24">
-        <div class="grid gap-8 md:grid-cols-3">
+      <div class="container mx-auto px-auto  lg:px-24"           data-aos="fade-up"
+>
+        <div class="grid gap-8 md:grid-cols-3 ">
           <div
-            class="service-item bg-gray-50 0 p-6 transform transition-transform hover:-translate-y-2"
-            data-aos="fade-up"
-            data-aos-delay="100"
-          >
-            <div class="icon mb-4 text-green-500">
-              <i class="bi bi-activity text-4xl"></i>
-            </div>
-            <h4 class="text-lg font-bold text-gray-800 mb-4">
-              <a
-                href="#"
-                class="transition-colors text-gray-600 hover:text-green-500"
-                >Lorem Ipsum</a
-              >
-            </h4>
-            <p class="text-sm">
-              Voluptatum deleniti atque corrupti quos dolores et quas molestias
-              excepturi
-            </p>
-          </div>
+          class="service-item bg-gray-50 p-6 transform transition-transform duration-300 hover:-translate-y-2 hover:text-green-500"
 
+        >
+          <div class="icon mb-4 text-green-500">
+            <i class="bi bi-activity text-4xl"></i>
+          </div>
+          <h4 class="text-lg font-bold mb-4">
+            <a
+              href="#"
+              class="transition-colors duration-300  "
+              >Lorem Ipsum</a
+            >
+          </h4>
+          <p class="text-sm text-gray-600">
+            Voluptatum deleniti atque corrupti quos dolores et quas molestias
+            excepturi
+          </p>
+        </div>
+        
+        
           <div
-            class="service-item bg-gray-50 p-6 transform transition-transform hover:-translate-y-2"
-            data-aos="fade-up"
-            data-aos-delay="200"
+            class="service-item bg-gray-50 p-6 transform transition-transform hover:-translate-y-2 hover:text-green-500"
+
           >
             <div class="icon mb-4 text-green-500">
               <i class="bi bi-bounding-box-circles text-4xl"></i>
             </div>
-            <h4 class="text-lg font-bold text-gray-800 mb-4">
+            <h4 class="text-lg font-bold mb-4">
               <a
                 href="#"
-                class="transition-colors transition-colors text-gray-600 hover:text-green-500 hover:text-green-500"
+                class="transition-colors transition-colors hover:text-green-500 "
                 >Sed ut perspici</a
               >
             </h4>
@@ -360,17 +361,16 @@
           </div>
 
           <div
-            class="service-item bg-gray-50 p-6 transform transition-transform hover:-translate-y-2"
-            data-aos="fade-up"
-            data-aos-delay="300"
+            class="service-item bg-gray-50 p-6 transform transition-transform hover:-translate-y-2 hover:text-green-500"
+
           >
             <div class="icon mb-4 text-green-500">
               <i class="bi bi-calendar4-week text-4xl"></i>
             </div>
-            <h4 class="text-lg font-bold text-gray-800 mb-4">
+            <h4 class="text-lg font-bold  mb-4">
               <a
                 href="#"
-                class="transition-colors transition-colors text-gray-600 hover:text-green-500 hover:text-green-500"
+                class="transition-colors transition-colors   hover:text-green-500"
                 >Magni Dolores</a
               >
             </h4>
@@ -485,18 +485,23 @@
         <div
           class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 text-center"
         >
-          <div class="stats-item rounded-lg p-6">
-            <span
-              class="block text-4xl font-extrabold text-green-500 purecounter"
-              >232
-            </span>
-            <p class="text-sm font-semibold text-gray-500 mt-2">Clients</p>
-          </div>
+        <div class="stats-item rounded-lg p-6">
+          <span
+            class="purecounter block text-4xl font-extrabold text-green-500"
+            data-purecounter-start="0" 
+            data-purecounter-end="232" 
+            data-purecounter-duration="1">
+          </span>
+          <p class="text-sm font-semibold text-gray-500 mt-2">Clients</p>
+        </div>
 
           <div class="stats-item rounded-lg p-6">
             <span
               class="block text-4xl font-extrabold text-green-500 purecounter"
-              >521
+              data-purecounter-start="0"
+              data-purecounter-end="521"
+              data-purecounter-duration="1"
+              >
             </span>
             <p class="text-sm font-semibold text-gray-500 mt-2">Projects</p>
           </div>
@@ -504,7 +509,10 @@
           <div class="stats-item rounded-lg p-6">
             <span
               class="block text-4xl font-extrabold text-green-500 purecounter"
-              >1453
+              data-purecounter-start="0"
+              data-purecounter-duration="1"
+              data-purecounter-end="1453"
+              >
             </span>
             <p class="text-sm font-semibold text-gray-500 mt-2">
               Hours Of Support
@@ -514,7 +522,10 @@
           <div class="stats-item rounded-lg p-6">
             <span
               class="block text-4xl font-extrabold text-green-500 purecounter"
-              >32
+              data-purecounter-duration="1"
+              data-purecounter-start="0"
+              data-purecounter-end="32"
+              >
             </span>
             <p class="text-sm font-semibold text-gray-500 mt-2">Workers</p>
           </div>
@@ -558,7 +569,7 @@
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-auto lg:px-24">
 
         <div
-          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500   transition">
+          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500   transition-colors duration-500">
           <div class="icon w-16 h-16 mx-auto bg-green-500 mt-12  text-white flex items-center justify-center rounded mb-6">
             <i class="bi bi-activity text-3xl"></i>
           </div>
@@ -569,7 +580,7 @@
         </div>
 
         <div
-          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500 transition">
+          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500 transition-all duration-500">
           <div class="icon w-16 h-16 mx-auto bg-green-500 mt-12 text-white flex items-center justify-center rounded mb-6">
             <i class="bi bi-broadcast text-3xl"></i>
           </div>
@@ -581,7 +592,7 @@
     
 
         <div
-          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500 transition">
+          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500 transition-all duration-500">
           <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center mt-12 rounded mb-6">
             <i class="bi bi-easel text-3xl"></i>
           </div>
@@ -593,7 +604,7 @@
     
 
         <div
-          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500 transition">
+          class="service-item bg-white  border border-gray-200 p-8  text-center hover:border-green-500 hover:text-green-500 transition-all duration-500">
           <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mt-12 mb-6">
             <i class="bi bi-bounding-box-circles text-3xl"></i>
           </div>
@@ -605,7 +616,7 @@
     
         <!-- Service Item 5 -->
         <div
-          class="service-item bg-white  border border-gray-200 p-8  text-center hover:text-green-500 hover:border-green-500 transition">
+          class="service-item bg-white  border border-gray-200 p-8  text-center hover:text-green-500 hover:border-green-500 transition-all duration-500">
           <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center rounded mt-12 mb-6">
             <i class="bi bi-calendar4-week text-3xl"></i>
           </div>
@@ -617,7 +628,7 @@
     
         <!-- Service Item 6 -->
         <div
-          class="service-item bg-white  border border-gray-200 p-8  text-center hover:text-green-500 hover:border-green-500 transition">
+          class="service-item bg-white  border border-gray-200 p-8  text-center hover:text-green-500 hover:border-green-500 transition-all duration-500">
           <div class="icon w-16 h-16 mx-auto bg-green-500 text-white flex items-center justify-center mt-12 rounded mb-6">
             <i class="bi bi-chat-square-text text-3xl"></i>
           </div>
@@ -1068,7 +1079,7 @@
             <h4 class="font-bold text-lg mb-2 relative pb-2  after:block after:w-12 after:h-[1px] after:bg-gray-400 after:absolute after:left-0 after:bottom-0">Walter White</h4>
             <span class=" italic text-xs">Chief Executive Officer</span>
             <div class="social absolute bottom-4 right-4 flex space-x-3 sm:space-x-2">
-              <a href="#" class="text-gray-500 hover:text-black-500 transition-colors">
+              <a href="#" class="text-gray-500 hover:text-stone-950 transition-colors">
                 <i class="bi bi-twitter-x"></i>
               </a>
               <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
@@ -1091,7 +1102,7 @@
             <h4 class="font-bold text-lg mb-2 relative pb-2  after:block after:w-12 after:h-[1px] after:bg-gray-400 after:absolute after:left-0 after:bottom-0">Sarah Jhonson</h4>
             <span class="lg:text-sm md:text-sm text- italic">Product Manager</span>
             <div class="social absolute bottom-4  right-4 flex space-x-3 sm:space-x-2">
-              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+              <a href="#" class="text-gray-500 hover:text-stone-950 transition-colors">
                 <i class="bi bi-twitter-x"></i>
               </a>
               <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
@@ -1114,7 +1125,7 @@
             <h4 class="font-bold text-lg mb-2 relative pb-2 after:content-[''] after:block after:w-12 after:h-[1px] after:bg-gray-400 after:absolute after:left-0 after:bottom-0">William Anderson</h4>
             <span class="text-sm italic">CTO</span>
             <div class="social absolute bottom-4 absolute right-4 flex  space-x-3 sm:space-x-2">
-              <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
+              <a href="#" class="text-gray-500 hover:text-stone-950 transition-colors">
                 <i class="bi bi-twitter-x"></i>
               </a>
               <a href="#" class="text-gray-500 hover:text-blue-500 transition-colors">
@@ -1163,7 +1174,7 @@
   
     <div class="container mx-auto px-4">
       <div class="grid grid-cols-1 lg:grid-cols-3  gap-8 px-auto lg:px-24">
-        <div class="bg-white p-6 rounded-lg shadow-md space-y-8" data-aos="fade-up" data-aos-delay="100">
+        <div class="bg-white p-6 shadow-md space-y-8" data-aos="fade-up" data-aos-delay="100">
           <div class="flex items-start w-auto  space-x-4" data-aos="fade-up" data-aos-delay="200">
             <i class="bi bi-geo-alt text-green-500 bg-gray-100 rounded-full p-2 text-xl hover:bg-green-500 hover:text-white transition"></i>
             <div>
@@ -1172,7 +1183,7 @@
             </div>
           </div>
   
-          <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="300">
             <i class="bi bi-telephone text-green-500 bg-gray-100 rounded-full p-2 text-xl hover:bg-green-500 hover:text-white transition"></i>
             <div>
               <h3 class="font-semibold text-lg text-gray-500">Call Us</h3>
@@ -1180,7 +1191,7 @@
             </div>
           </div>
   
-          <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="400">
             <i class="bi bi-envelope text-green-500 bg-gray-100 rounded-full p-2 text-xl hover:bg-green-500 hover:text-white transition"></i>
             <div>
               <h3 class="font-semibold text-lg text-gray-500">Email Us</h3>
@@ -1201,7 +1212,7 @@
   
         <!-- Contact Form -->
         <div
-  class="bg-white p-6 rounded-lg col-span-2 shadow-md"
+  class="bg-white p-6  col-span-2 shadow-md"
   data-aos="fade-up"
   data-aos-delay="200"
 >
@@ -1228,7 +1239,7 @@
           <textarea name="message" id="message-field" rows="10" class="w-full border border-gray-300  p-2 focus:outline-none focus:ring focus:ring-green-500" required></textarea>
         </div>
         <div class="text-center">
-          <button type="submit" class="bg-green-500 text-white mt-4 px-6 py-2 rounded-lg hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-300">
+          <button type="submit" class="bg-green-500 text-white mt-4 px-6 py-2 rounded-full  hover:bg-green-600 focus:outline-none focus:ring focus:ring-green-300">
             Send Message
           </button>
         </div>
@@ -1267,8 +1278,7 @@
                   padding: 6px 8px;
                   position: relative;
                   border-radius: 4px;
-                  background-color: var(--surface-color);
-                  border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
+
                   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
                   display: flex;
                   transition: 0.3s;
@@ -1284,7 +1294,7 @@
                   type="submit"
                   value="Subscribe"
                   style="margin-top: -7px;margin-right:-7px;margin-bottom: -7px;"
-                  class="py-2 px-8 text-contrast-color bg-green-500 text-white font-medium rounded-full hover:bg-green-700 transition duration-300"
+                  class="px-1 px-8 text-contrast-color bg-green-500 text-white font-medium rounded-full hover:bg-green-700 transition duration-300"
                 />
               </div>
             </form>
@@ -1314,7 +1324,7 @@
     
           <!-- Useful Links -->
           <div class="footer-links">
-            <h4 class="font-bold text-lg pb-3 text-gray-600">Useful Links</h4>
+            <h4 class="font-bold text-lg pb-3 text-gray-400">Useful Links</h4>
             <ul class="space-y-3 mt-4 text-sm">
               <li>
                 <a href="index.html" class="flex items-center opacity-80 hover:text-green-500">
@@ -1341,7 +1351,7 @@
     
           <!-- Our Services -->
           <div class="footer-links">
-            <h4 class="font-bold text-lg pb-3 text-gray-600">Our Services</h4>
+            <h4 class="font-bold text-lg pb-3 text-gray-400">Our Services</h4>
             <ul class="space-y-3 mt-4 text-sm">
               <li>
                 <a href="#" class="flex items-center opacity-80 hover:text-green-500">
@@ -1368,7 +1378,7 @@
     
           <!-- Follow Us -->
        <div class="col-span-1">
-            <h4 class="font-bold text-lg pb-3 text-gray-600">Follow Us</h4>
+            <h4 class="font-bold text-lg pb-3 text-gray-400">Follow Us</h4>
             <p class="mt-4">
               Cras fermentum odio eu feugiat lide par naso tiabsoluterra videa magna
               derita valies
@@ -1376,7 +1386,7 @@
             <div class="social-links flex space-x-4 mt-4">
               <a
                 href="https://x.com/?lang=en&mx=2"
-                class="w-10 h-10 flex items-center justify-center rounded-full border  opacity-60 hover:text-neutral-950 hover:bg-green-500 hover:border-green-400 transition"
+                class="w-10 h-10 flex items-center justify-center rounded-full border  opacity-60 hover:text-white hover:bg-green-500 hover:border-green-400 transition"
                 ><i class="bi bi-twitter-x"></i
               ></a>
               <a
@@ -1503,6 +1513,10 @@ navLinks.forEach(link => {
   
     </script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      new PureCounter();
+    </script>
+    
     <script>
       AOS.init();
     </script>
