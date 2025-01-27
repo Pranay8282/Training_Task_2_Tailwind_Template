@@ -54,3 +54,63 @@
 /* 
  
 */
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-item img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.portfolio-item:hover img {
+  transform: scale(1.05);
+}
+
+.portfolio-item .portfolio-info {
+  background-color: rgba(255, 255, 255, 0.8); /* Match bg-opacity */
+  position: absolute;
+  left: 30px; /* Horizontal spacing */
+  right: 30px;
+  bottom: 0;
+  opacity: 0;
+  padding: 15px;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.portfolio-item:hover .portfolio-info {
+  opacity: 1;
+  bottom: 20px; /* Adjust hover lift */
+}
+
+.portfolio-info h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  padding-right: 50px; /* For spacing from the icons */
+}
+
+.portfolio-info p {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.7);
+  margin-bottom: 10px;
+  padding-right: 50px; /* For spacing from the icons */
+}
+
+.portfolio-info .preview-link,
+.portfolio-info .details-link {
+  position: relative;
+  font-size: 24px;
+  transition: color 0.3s;
+}
+
+.portfolio-info .preview-link:hover,
+.portfolio-info .details-link:hover {
+  color: var(--accent-color);
+}
+
+.portfolio-info .details-link {
+  margin-left: 10px; /* Space between icons */
+}
