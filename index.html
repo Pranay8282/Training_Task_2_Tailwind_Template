@@ -16,7 +16,8 @@
   rel="stylesheet"
   href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
   <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.min.js"></script>
-
+  <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <style>
       /* Dropdown visibility styles */
@@ -282,10 +283,13 @@
               >
                 Get Started
               </a>
-              <a href="#" class="flex items-center">
-                <i class="bi bi-play-circle text-3xl mr-2 text-green-500"></i>
-                <span class="text-lg font-semibold">Watch Video</span>
-              </a>
+              <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" 
+   class="flex items-center glightbox" 
+   data-type="video">
+   <i class="bi bi-play-circle text-3xl mr-2 text-green-500"></i>
+   <span class="text-lg font-semibold hover:text-green-500 transition duration-500">Watch Video</span>
+</a>
+
             </div>
           </div>
     
@@ -407,8 +411,9 @@
             <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
               <div class="absolute inset-0 w-16 h-16 bg-green-500 rounded-full animate-ping"></div>
               <a
-                href="#"
-                class="relative bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-md transition hover:scale-110"
+                href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+
+                class="glightbox relative bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-md transition hover:scale-110"
               >
                 <i class="bi bi-play-fill text-2xl"></i>
               </a>
@@ -464,7 +469,7 @@
 
 
 
-<!-- States Section ----------------------------------------------------------------------------------------------------------------------------------------->
+<!-- States Section ------------------------------------------------------------------------------------------------------------------------------------------->
 <section id="stats" class="py-16 bg-white">
       <div
         class="container mx-auto text-4xl"
@@ -666,7 +671,7 @@
     <div class="container mx-auto grid px-auto lg:px-24 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" >
       <!-- Portfolio Item -->
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
-        <img src="Images/app-1.jpg" alt="App 1" class="w-full shadow-lg">
+        <img src="Images/app-1.jpg" alt="App 1" class="w-full shadow-lg glightbox">
       
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">App 1</h4>
@@ -684,7 +689,7 @@
       
 
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="310">
-        <img src="Images/product-1.jpg" alt="App 1" class="w-full shadow-lg">
+        <img src="Images/product-1.jpg" alt="App 1" class="w-full shadow-lg glightbox">
       
         <!-- Overlay with information -->
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
@@ -703,7 +708,7 @@
 
 
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="330">
-        <img src="Images/branding-1.jpg" alt="branding-1 " class="w-full shadow-lg">
+        <img src="Images/branding-1.jpg" alt="branding-1 " class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">branding-1 </h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -720,7 +725,7 @@
 
       
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="350">
-        <img src="Images/books-1.jpg" alt="Book 1" class="w-full shadow-lg">
+        <img src="Images/books-1.jpg" alt="Book 1" class="w-full shadow-lg glightbox">
           <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Books 1</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -735,7 +740,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="370">
-        <img src="Images/app-2.jpg  " alt="App 2" class="w-full shadow-lg">
+        <img src="Images/app-2.jpg  " alt="App 2" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">app 2</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -750,7 +755,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="390">
-        <img src="Images/product-2.jpg" alt="Product 2" class="w-full shadow-lg">
+        <img src="Images/product-2.jpg" alt="Product 2" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Product 2</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -765,7 +770,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="410">
-        <img src="Images/branding-2.jpg" alt="Branding 2" class="w-full shadow-lg">
+        <img src="Images/branding-2.jpg" alt="Branding 2" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Branding 2</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -780,7 +785,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="430">
-        <img src="Images/books-2.jpg" alt="Books 2" class="w-full shadow-lg">
+        <img src="Images/books-2.jpg" alt="Books 2" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Books 2</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -795,7 +800,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="450">
-        <img src="Images/app-3.jpg" alt="App 3" class="w-full shadow-lg">
+        <img src="Images/app-3.jpg" alt="App 3" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">App 3</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -810,7 +815,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="470">
-        <img src="Images/product-3.jpg" alt="Product 3" class="w-full shadow-lg">
+        <img src="Images/product-3.jpg" alt="Product 3" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Product 3</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -825,7 +830,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="490">
-        <img src="Images/branding-3.jpg" alt="Branding 3" class="w-full shadow-lg">
+        <img src="Images/branding-3.jpg" alt="Branding 3" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Branding 3</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -840,7 +845,7 @@
         </div>
       </div>
       <div class="portfolio-item relative group cursor-pointer transform transition-transform hover:-translate-y-2" data-aos="fade-up" data-aos-delay="510">
-        <img src="Images/books-3.jpg" alt="Books 3" class="w-full shadow-lg">
+        <img src="Images/books-3.jpg" alt="Books 3" class="w-full shadow-lg glightbox">
         <div class="portfolio-info absolute left-8 right-8 bottom-0 bg-opacity-50 bg-white text-black opacity-0 group-hover:opacity-100 transition-all ease-in-out duration-300 z-10 p-4">
           <h4 class="font-semibold text-lg text-gray-700 mb-2">Books 3</h4>
           <p class="text-sm text-gray-500 mb-4">Lorem ipsum, dolor sit amet consectetur</p>
@@ -1280,7 +1285,7 @@
         </div>
       </div>
 
-      <div class="container mx-auto  py-16 px-auto lg:px-24">
+      <div class="container mx-auto  py-8 px-auto lg:px-24">
         <div class="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-8">
           <!-- Footer About -->
           <div class="footer-about">
@@ -1503,5 +1508,17 @@ navLinks.forEach(link => {
 <script>
       AOS.init();
 </script>
+
+
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox', // Targets all elements with the "glightbox" class
+    touchNavigation: true,
+    loop: false,
+    autoplayVideos: true,
+  });
+</script>
+
+
   </body>
 </html>

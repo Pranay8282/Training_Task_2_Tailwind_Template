@@ -12,6 +12,9 @@
     />
     <link rel="stylesheet" href="assats/main.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs@1.5.0/dist/purecounter_vanilla.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
     <style>
       /* Dropdown visibility styles */
       .dropdown ul {
@@ -290,8 +293,8 @@
         <div class="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div class="absolute inset-0 w-16 h-16 bg-green-500 rounded-full animate-ping"></div>
           <a
-            href="#"
-            class="relative bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-md transition hover:scale-110"
+            href="https://www.youtube.com/watch?v=Y7f98aduVJ8"
+            class="relative bg-green-500 text-white w-16 h-16 flex items-center justify-center rounded-full shadow-md transition hover:scale-110 glightbox"
           >
             <i class="bi bi-play-fill text-2xl"></i>
           </a>
@@ -359,7 +362,10 @@
         <div class="stats-item rounded-lg p-6">
           <span
             class="block text-4xl font-extrabold text-green-500 purecounter"
-            >232
+            data-purecounter-start="0"
+            data-purecounter-end="232"
+            data-purecounter-duration="1"
+            >
           </span>
           <p class="text-sm font-semibold text-gray-500 mt-2">Clients</p>
         </div>
@@ -367,7 +373,10 @@
         <div class="stats-item rounded-lg p-6">
           <span
             class="block text-4xl font-extrabold text-green-500 purecounter"
-            >521
+            data-purecounter-start="0"
+            data-purecounter-end="521"
+            data-purecounter-duration="1"
+            >
           </span>
           <p class="text-sm font-semibold text-gray-500 mt-2">Projects</p>
         </div>
@@ -375,7 +384,10 @@
         <div class="stats-item rounded-lg p-6">
           <span
             class="block text-4xl font-extrabold text-green-500 purecounter"
-            >1453
+            data-purecounter-start="0"
+            data-purecounter-end="1453"
+            data-purecounter-duration="1"
+            >
           </span>
           <p class="text-sm font-semibold text-gray-500 mt-2">
             Hours Of Support
@@ -385,7 +397,10 @@
         <div class="stats-item rounded-lg p-6">
           <span
             class="block text-4xl font-extrabold text-green-500 purecounter"
-            >32
+            data-purecounter-start="0"
+            data-purecounter-end="32"
+            data-purecounter-duration="1"
+            >
           </span>
           <p class="text-sm font-semibold text-gray-500 mt-2">Workers</p>
         </div>
@@ -630,5 +645,18 @@ navLinks.forEach(link => {
        <script>
          AOS.init();
        </script>
+       <script>
+        new PureCounter();
+  </script>
+
+
+<script>
+  const lightbox = GLightbox({
+    selector: '.glightbox', // Targets all elements with the "glightbox" class
+    touchNavigation: true,
+    loop: false,
+    autoplayVideos: true,
+  });
+</script>
 </body>
 </html>
